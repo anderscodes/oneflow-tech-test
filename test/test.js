@@ -1,14 +1,17 @@
+
 var request = require('supertest');
+
 
 describe('loading express', function () {
   var server;
 
   beforeEach(function () {
-    server = require('../src/server');
+    delete require.cache[require.resolve('../expressapi/server')];
+    server = require('../expressapi/server');
   });
 
-  afterEach(function () {
-    server.close();
+  afterEach(function (done) {
+    server.close(done);
   });
 
   it('responds to /', function testSlash(done) {
