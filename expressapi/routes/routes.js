@@ -1,8 +1,9 @@
+var siliconValley = require('../silicon-valley.json')
 
 const appRouter = function (app) {
 
   app.get("/", function (req, res) {
-    res.sendStatus(200);
+    res.send(siliconValley);
   });
 
 }

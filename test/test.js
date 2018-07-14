@@ -1,5 +1,9 @@
-
+var chai = require('chai');
 var request = require('supertest');
+var expect = chai.expect;
+var siliconValley = require('../expressapi/silicon-valley.json')
+
+
 
 
 describe('loading express', function () {
@@ -14,10 +18,14 @@ describe('loading express', function () {
     server.close(done);
   });
 
-  it('responds to /', function testSlash(done) {
+  it('responds to / and returns the data', function testSlash(done) {
   request(server)
     .get('/')
-    .expect(200, done);
+    .expect(200)
+    .end(function(err, res) {
+      expect(res.body).to.eql(siliconValley);
+      done(err);
+    });
   });
 
   it('404 everything else', function testPath(done) {
@@ -25,5 +33,7 @@ describe('loading express', function () {
       .get('/foo/bar')
       .expect(404, done);
   });
+
+
 
 });
