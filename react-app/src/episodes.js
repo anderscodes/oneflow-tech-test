@@ -31,7 +31,7 @@ class Episodes extends Component {
 
     return (
       <div>
-          {this.state.episodes}
+        {this.state.episodes}
       </div>
     );
   }

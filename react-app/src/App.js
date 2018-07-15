@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Episodes from './episodes';
+import Episodes from './Episodes';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -9,7 +10,7 @@ class App extends Component {
 
           <h1 className="App-title">Welcome to a list of Silicon Valley episodes!</h1>
         </header>
-        <Episodes />
+          <Episodes />
       </div>
     );
   }
