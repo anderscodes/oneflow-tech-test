@@ -58,3 +58,8 @@ To run the app navigate to the root directory and run npm start which will start
 To run the tests navigate to the root directory and run npm test which will start both the server and the react tests
 
 `npm test`
+
+# Code Analysis
+
+[Code Analysis](https://github.com/anderscodes/oneflow-tech-test/blob/master/code_analysis.md)
+
