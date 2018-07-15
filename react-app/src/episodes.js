@@ -8,7 +8,6 @@ class Episodes extends Component {
       };
   }
 
-
   componentDidMount(){
 
     fetch('/episodes')
@@ -28,7 +27,6 @@ class Episodes extends Component {
   };
 
   render() {
-
     return (
       <div>
         {this.state.episodes}
