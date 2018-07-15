@@ -35,6 +35,7 @@ Overall, I am relatively happy with the project however it feels a bit unnatural
 
 ## Diagram:
 
+![Diagram](https://raw.githubusercontent.com/anderscodes/oneflow-tech-test/master/SiliconValley.jpg)
 
 ## How to run:
 
