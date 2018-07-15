@@ -22,16 +22,15 @@ You will see that the diagram also has a route for sending episodes from a given
 
 After creating the diagram, I started work on creating the express API with one route for episodes and another for seasons as discussed above. The seasons route required some backend logic which is in the model directory.
 
-Unit testing for the back end was done using mocha as a framework.
+Unit testing for the back end was done using mocha as a framework, all the backend needed was two routes, one for the episodes part of the JSON and one for the seasons.
 
 Once the back end was created I started work on the react app and created a new directory for it. I used the create-react-app package for ease of use and deleted everything I didn't need.
 
-The react app is fairly straightforward as all it does it render an episodes component with an image and a title to the page. There is a test to check the app renders without crashing and had I had more time to work on the project I would have created more tests.
+The react app is fairly straightforward as all it does it render an episodes component with an image and a title to the page. There is a React test that uses Jest to check the app renders without crashing but if I had more time to work on the project I would have created more tests.
 
 I had planned to implement the search feature but unfortunately ran out of time to do so.
 
-If I had more time I would have implemented the two features discussed above as well as spending more time on the CSS to make it look a bit better.
-Overall, I am relatively happy with the project however it feels a bit unnatural not to fully test the react components but i stuck to the instructions which said unit tests.
+If I had more time I would have implemented the two features discussed above as well as spending more time on the CSS to make the design better. If I was doing the project again I would also have used a linter.
 
 ## Diagram:
 
