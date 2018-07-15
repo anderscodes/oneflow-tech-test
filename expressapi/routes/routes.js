@@ -3,8 +3,9 @@ var model = require('../model/model.js')
 
 const appRouter = function (app) {
 
-  app.get("/", function (req, res) {
-    res.send(siliconValley);
+  app.get("/episodes", function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    res.json(siliconValley._embedded);
   });
 
   app.get("/season/:num", function (req, res) {

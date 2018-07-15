@@ -22,10 +22,10 @@ describe('loading express', function () {
 
     it('responds to / and returns the data', function testSlash(done) {
     request(server)
-      .get('/')
+      .get('/episodes')
       .expect(200)
       .end(function(err, res) {
-        expect(res.body).to.eql(siliconValley);
+        expect(res.body).to.eql(siliconValley._embedded);
         done(err);
       });
     });

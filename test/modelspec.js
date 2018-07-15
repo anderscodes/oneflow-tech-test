@@ -7,7 +7,6 @@ var siliconValley = require('../expressapi/silicon-valley.json')
   describe('model', function () {
 
     it('returns episodes', function () {
-
-          expect(model(4)).to.lengthOf(38);
+          expect(model(4)).to.include(siliconValley._embedded.episodes[38]);
       });
     });
