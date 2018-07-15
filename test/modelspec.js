@@ -8,6 +8,6 @@ var siliconValley = require('../expressapi/silicon-valley.json')
 
     it('returns episodes', function () {
 
-          expect(model(3)).to.lengthOf(38);
+          expect(model(4)).to.lengthOf(38);
       });
     });
