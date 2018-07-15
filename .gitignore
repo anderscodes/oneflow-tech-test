@@ -1,7 +1,5 @@
 node_modules
-package.json
 ./react-app/node_modules
-./react-app/package.json
 
 
 # misc
